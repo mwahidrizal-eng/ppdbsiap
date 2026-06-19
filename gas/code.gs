@@ -24,8 +24,8 @@ const DEFAULT_FORM_FIELDS = [
   { id: "No HP", label: "No. WhatsApp Aktif", type: "text", required: true },
   { id: "Foto Siswa", label: "Pas Foto 3x4", type: "file", required: true },
   { id: "Kartu Keluarga", label: "Kartu Keluarga", type: "file", required: true },
-  { id: "Akta Kelahiran", label: "Akta Kelahiran", type: "file", required: true }
-   { id: "Ijazah", label: "Ijazah", type: "file", required: true }
+  { id: "Akta Kelahiran", label: "Akta Kelahiran", type: "file", required: true },
+   { id: "Ijazah", label: "Ijazah", type: "file", required: true },
 ];
 
 const DEFAULT_SETTINGS = {
