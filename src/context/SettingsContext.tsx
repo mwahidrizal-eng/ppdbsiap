@@ -12,7 +12,7 @@ const SettingsContext = createContext<SettingsContextType | undefined>(undefined
 export function SettingsProvider({ children }: { children: ReactNode }) {
   const [settings, setSettings] = useState<AppSettings | null>(() => {
     const cached = localStorage.getItem('app_settings_cache');
-    return cached ? JSON.parse(cached) : null;
+    return null;
   });
   const [isLoading, setIsLoading] = useState(!settings);
 
@@ -25,7 +25,6 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
     try {
       const data = await getSettings();
       setSettings(data);
-      localStorage.setItem('app_settings_cache', JSON.stringify(data));
     } catch (error) {
       console.error("Failed to fetch settings", error);
     } finally {
