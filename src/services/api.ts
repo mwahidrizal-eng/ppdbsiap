@@ -368,3 +368,14 @@ export const loginAdmin = async (username: string, password: string) => {
     throw error;
   }
 };
+const sendRequest = async (payload) => {
+  const response = await fetch(GAS_WEB_APP_URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(payload)
+  });
+
+  return await response.json();
+};
