@@ -25,13 +25,14 @@ const DEFAULT_FORM_FIELDS = [
   { id: "Foto Siswa", label: "Pas Foto 3x4", type: "file", required: true },
   { id: "Kartu Keluarga", label: "Kartu Keluarga", type: "file", required: true },
   { id: "Akta Kelahiran", label: "Akta Kelahiran", type: "file", required: true }
+   { id: "Ijazah", label: "Ijazah", type: "file", required: true }
 ];
 
 const DEFAULT_SETTINGS = {
-  namaSekolah: "SDN Harapan Bangsa",
-  alamat: "Jl. Pendidikan No. 123, Kota Pelajar, Indonesia 12345",
-  telepon: "(021) 1234-5678",
-  email: "info@sdnharapanbangsa.sch.id",
+  namaSekolah: "SD Negeri Pabuaran",
+  alamat: "Kp. Mayat RT/RW 003/001 Ds. Panunggulan Kec. Tunjung Teja Kab. Serang-Banten (42174)",
+  telepon: "(+62) 831-6617-1811 (Pak Rizal)",
+  email: "sdnpabuaran@gmail.com",
   deskripsi: "Mencetak generasi penerus bangsa yang cerdas, berakhlak mulia, dan siap menghadapi tantangan masa depan dengan pendidikan berkualitas.",
   statusPendaftaran: "Buka",
   formFields: JSON.stringify(DEFAULT_FORM_FIELDS)
