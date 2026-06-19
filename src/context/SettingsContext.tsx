@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { getSettings, AppSettings } from '../service/api.ts';
+import { getSettings, AppSettings } from '../services/api.ts';
 
 interface SettingsContextType {
   settings: AppSettings | null;
